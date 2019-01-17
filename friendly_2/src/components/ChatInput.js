@@ -1,7 +1,6 @@
 import React from 'react';
 
-// This component is where the user can type their message and send it
-// to the chat room. We shouldn't communicate with the server here though.
+
 class ChatInput extends React.Component {
   state = {
     chatInput:''
@@ -16,7 +15,7 @@ class ChatInput extends React.Component {
     this.setState({ chatInput: '' });
   }
   render() {
-    // Display a user input form and do something when it is submitted
+    
     return (
       <form className="chat-input" onSubmit={this.submitHandler}>
         <input type="text"
